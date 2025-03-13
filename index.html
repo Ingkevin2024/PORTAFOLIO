@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">KR</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="nav-item active">Inicio</a></li>
+            <li><a href="#sobre-mi" class="nav-item">Sobre Mí</a></li>
+            <li><a href="#proyectos" class="nav-item">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-item">Contacto</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animated-title">Bienvenido a mi Portafolio</h1>
+            <p class="typing-text"></p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="hero-btn primary">Ver Proyectos</a>
+                <a href="#contacto" class="hero-btn secondary">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>¡Hola! Soy un desarrollador web especializado en crear soluciones digitales innovadoras. Mi pasión es transformar ideas en experiencias web interactivas y funcionales, combinando diseño atractivo con tecnologías modernas. Me destaco por mi compromiso con la calidad y la atención al detalle en cada proyecto.</p>
+                <div class="cv-download">
+                    <a href="HOJADEVIDA.pdf" target="_blank" class="cv-btn">
+                        <span class="cv-btn-content">
+                            <i class="fas fa-file-pdf"></i>
+                            <span class="btn-text">Descargar CV</span>
+                        </span>
+                        <span class="cv-btn-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="skills">
+                <h3>Mis Habilidades</h3>
+                <div class="skill-bars">
+                    <div class="skill">
+                        <span>HTML/CSS</span>
+                        <div class="progress-bar" data-percent="90"></div>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript/php</span>
+                        <div class="progress-bar" data-percent="85"></div>
+                    </div>
+                    <div class="skill">
+                        <span>Base de Datos(SQL/WAMPSERVER)</span>
+                        <div class="progress-bar" data-percent="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="Landing Page.jpg" alt="Proyecto 1">
+                <h3>ECOMOVI</h3>
+                <H3>MAS LIMPIO MAS VERDE </H3>
+                <p>Aplicación web que permite a los usuarios se registre y gestionar el sistema de restricción vehicular voluntario. 
+                Desarrollada con HTML, CSS, php y JavaScript, ofrece una interfaz intuitiva para que los usuarios se registren, utilicen la pagina web para ganar unos puntos con su pico y placa, 
+                y contribuir a la movilidad sostenible.</p>
+            </div>
+            <div class="project-card">
+                <img src="pagina2.jpg" alt="Proyecto 2">
+                <h3>PUPPY SHOP</h3>
+                <p>Tienda en línea especializada en productos y accesorios para mascotas. Desarrollada con HTML, CSS, JavaScript y PHP, 
+                ofrece una experiencia con catálogo de productos intuitiva, calendario interactivo y sistema de pagos seguros. 
+                Incluye secciones de alimentos premium, juguetes, accesorios y artículos de cuidado e higiene para perros. 
+                La plataforma también cuenta con un blog informativo sobre cuidados y consejos para mascotas.</p>
+            </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contact-form" onsubmit="sendToWhatsApp(event)">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar a WhatsApp</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portafolio de Kevin Stiven Rivera. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
